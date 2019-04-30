@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Header from './components/layout/Header';
+
 
 import './App.css';
 
@@ -9,22 +11,12 @@ class App extends Component {
 
 render () {
     return (
-        <Router>
           <div className="App">
             <div className="container">
               <Header />
-                <Route exact path="/" render={props => (
-                    <React.Fragment>
-                      <LessonBook />
-                      <TheoryBook />
-                      <TechniqueBook />
-                      <PerformanceBook />
-                    </React.Fragment>
-                )} />
             </div>
           </div>
-        </Router>
-    )
+    );
 }
 
 }
